@@ -87,12 +87,11 @@
       margin: 0 auto;
     }
     table[class='actions']{
-      margin-left: 25px;
-      float: left;
+      
     }
 
     td[class="border"] {
-      border: 1px solid #f1f1f1;
+      
     }
     span[class="v-middle"] {
       display: inline-block;
@@ -105,12 +104,13 @@
       font-size: 14px; font-weight: 700; color: #3d596d;
     }
     img[class="stars"] {
-      display: block;
-      float: left;
+      display: inline-block;
+      margin-right: -4px;
       width:19px;
       height:19px;
       border: 0;
     }
+
     /* MOBILE STYLES */
     @media screen and (max-width: 625px) {
       div[class="logo"]{
@@ -133,17 +133,21 @@
       }
       table[class='actions'] {
           margin: 5px 0 35px;
-          float: left;
+          display: inline-block;
           width: 100% !important;
         }
 
 
       td[class="r-col__header"] {
-        padding:15px 0 15px 0;
+        padding:0px 0 15px 0;
       }
       a[class="mobile-hide"]{
         display: none !important;
       }
+      .block{
+      display: inline-block;
+      width: 100%;
+    }
     }
 </style>
 
@@ -174,26 +178,36 @@
 <table border="0" cellpadding="0" cellspacing="0" class="wrapper">
     <tr>
         <td bgcolor="#ffffff" style="padding: 0px 0px 65px 0px; text-align: center;" class="section-padding">
-            <table cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+            <table cellpadding="0" cellspacing="0" class="responsive-table">
                 <tr>
                     <td>
-                        <!-- TWO COLUMNS -->
                         <table cellspacing="0" cellpadding="0" border="0" width="100%" >
-                            <tr bgcolor="#f6f8fa">
-                                <td valign="top" style="padding: 15px; " class="border">
+                          <!-- TWO COLUMNS -->
+                            <tr style="border: 1px solid #f1f1f1; background: #f6f8fa;">
+                                <td valign="top" style="padding: 15px; display: inline-block; vertical-align: top; width: 320px;" class="block">
                                     <!-- LEFT COLUMN -->
-                                   <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff; float:left;" class="message">
+                                   <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff;" class="message">
                                        <tr>
                                           <td style="padding: 8px 10px 0 10px; text-align: center;" >
-                                              <span style="float: left;">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                              </span>
-                                              <span style="text-align: center; font-family: 'OpenSans', sans-serif; color: #3d596d; font-size:14px; line-height: 17px; font-weight: 400;"  class="v-middle"><span style="font-weight:700;">chrystal</span>,  1/15/2016</span>
-                                              <span style="float:right;"><img src="img_yes.png" width="22" height="22" style="display: inline-block;" alt="" border="0" class=""></span>
+                                            <table style="width: 100%;">
+                                              <tr>
+                                                <td style=" text-align: left;">
+                                                  <span >
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                  </span>
+                                                </td>
+                                                <td style=" text-align: center; vertical-align: middle;">
+                                                  <span style="text-align: center; font-family: 'OpenSans', sans-serif; color: #3d596d; font-size:14px; line-height: 17px; font-weight: 400;"  class="v-middle"><span style="font-weight:700;">chrystal</span>,  1/15/2016</span>
+                                                </td>
+                                                <td style=" text-align: right;">
+                                                   <span><img src="img_yes.png" width="22" height="22" style="display: inline-block;" alt="" border="0" class=""></span>
+                                                </td>
+                                              </tr>
+                                            </table>
                                           </td>                                  
                                        </tr>
                                        <tr>
@@ -204,8 +218,8 @@
                                            <a href="http://www.superpages.com/bp/hamden-ct/ele...">http://www.superpages.com/bp/hamden-ct/ele...</a></span></td>
                                        </tr>
                                    </table>
-                                  
-                                        
+                                </td>
+                                <td valign="top" class="block">                                       
                                     <!-- RIGHT COLUMN -->
                                     <table cellpadding="0" cellspacing="0" border="0" width="225" style="background-color: #f4f6f8;" class="actions">
                                         <tr>
@@ -213,29 +227,39 @@
                                         </tr>
                                         <tr>
                                             <td style="padding: 0; text-align: center;">
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes <img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; text-decoration:none; position: relative; margin-right:8px;"><img src="yes_button.png" alt="" style=""></a>
+                                                <a href="#" style="display: inline-block; text-align: center;  text-decoration:none; position: relative;"><img src="no_button.png" alt="" style=""></a>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="top" style="padding: 15px; " class="">
+                                 <td valign="top" style="padding: 15px; display: inline-block; vertical-align: top; width: 320px;" class="block">
                                     <!-- LEFT COLUMN -->
-                                   <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff; float:left;" class="message">
+                                   <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff; " class="message">
                                        <tr>
                                           <td style="padding: 8px 10px 0 10px; text-align: center;" >
-                                              <span style="float: left;">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                                <img src="img_stars.jpg" alt="stars" class="stars">
-                                              </span>
-                                              <span style="text-align: center; font-family: 'OpenSans', sans-serif; color: #3d596d; font-size:13px; line-height: 17px; font-weight: 400;" class="v-middle"><span style="font-weight:700;">anonymous</span>, 1/17/2016</span>
-                                              <span style="float:right;"><img src="img_no.png" width="22" height="22" style="display: inline-block;" alt="" border="0" class=""></span>
-                                          </td>                                  
+                                            <table style="width: 100%;">
+                                              <tr>
+                                                <td style=" text-align: left;">
+                                                  <span >
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                    <img src="img_stars.jpg" alt="stars" class="stars">
+                                                  </span>
+                                                </td>
+                                                <td style=" text-align: center; vertical-align: middle;">
+                                                  <span style="text-align: center; font-family: 'OpenSans', sans-serif; color: #3d596d; font-size:14px; line-height: 17px; font-weight: 400;"  class="v-middle"><span style="font-weight:700;">anonymous</span>, 1/17/2016</span>
+                                                </td>
+                                                <td style=" text-align: right;">
+                                                   <span><img src="img_no.png" width="22" height="22" style="display: inline-block;" alt="" border="0" class=""></span>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>                                 
                                        </tr>
                                        <tr>
                                            <td align="left" style="padding: 15px 40px 0 10px; font-family: 'OpenSans', sans-serif; color: #3d596d; font-size:14px; line-height: 17px; font-weight: 400;">Flawless execution of my project. I will recommend them to anybody!</td>
@@ -245,8 +269,8 @@
                                            <a href="http://www.mojopages.com/biz/hamden-ct/ele...">http://www.mojopages.com/biz/hamden-ct/ele...</a></span></td>
                                        </tr>
                                    </table>
-                                  
-                                        
+                                </td>
+                                <td valign="top" class="block">                                        
                                     <!-- RIGHT COLUMN -->
                                     <table cellpadding="0" cellspacing="0" border="0" width="225" align="right" class="actions">
                                          <tr>
@@ -254,17 +278,17 @@
                                         </tr>
                                         <tr>
                                             <td style="padding: 0; text-align: center;">
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; text-decoration:none; position: relative; margin-right:8px;"><img src="yes_button.png" alt="" style=""></a>
+                                                <a href="#" style="display: inline-block; text-align: center;  text-decoration:none; position: relative;"><img src="no_button.png" alt="" style=""></a>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
-                            <tr bgcolor="#f6f8fa">
-                                <td valign="top" style="padding: 15px; " class="border">
+                            <tr style="border: 1px solid #f1f1f1; background: #f6f8fa">
+                                 <td valign="top" style="padding: 15px; display: inline-block; vertical-align: top; width: 320px;" class="block">
                                     <!-- LEFT COLUMN -->
-                                   <table cellpadding="0" cellspacing="0" style="border: none; box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff; float:left;" class="message">
+                                   <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3); background-color: #fff; " class="message">
                                        <tr>
                                           <td style="padding: 8px 10px 0 10px; text-align: center;" >
                                               <span style="float: left;">
@@ -286,28 +310,30 @@
                                            <a href="http://www.superpages.com/bp/hamden-ct/ele...">http://www.superpages.com/bp/hamden-ct/ele...</a></span></td>
                                        </tr>
                                    </table>
-                                  
-                                        
-                                    <!-- RIGHT COLUMN -->
-                                    <table cellpadding="0" cellspacing="0" border="0" width="225" align="right" style="background-color: #f4f6f8;" class="actions">
-                                         <tr>
-                                            <td class="r-col__header">Is this review fair & accurate?</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 0; text-align: center;">
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                  </td>
+                                  <td valign="top" class="block">                                       
+                                      <!-- RIGHT COLUMN -->
+                                      <table cellpadding="0" cellspacing="0" border="0" width="225" align="right" style="background-color: #f4f6f8;" class="actions">
+                                           <tr>
+                                              <td class="r-col__header">Is this review fair & accurate?</td>
+                                          </tr>
+                                          <tr>
+                                              <td style="padding: 0; text-align: center;">
+                                                <a href="#" style="display: inline-block; text-align: center; text-decoration:none; position: relative; margin-right:8px;"><img src="yes_button.png" alt="" style=""></a>
+                                                <a href="#" style="display: inline-block; text-align: center;  text-decoration:none; position: relative;"><img src="no_button.png" alt="" style=""></a>
                                             </td>
-                                        </tr>
-                                    </table>
-                                </td>
+                                          </tr>
+                                      </table>
+                                  </td>
                             </tr>
+                          </table>
+                          <table>
                             <tr>
-                                <td style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">
-                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Getting more customers to call or visit your business means showing up when people search online. Everyone knows that, but “showing up” is not what it used to be.</p>
-                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">You can pay top dollar to be the first advertisement people click. However, to be the business that people call – not just click – you need to build trust. Online reviews can build trust for you if your reviews are credible.</p>
-                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Dex Media Verify helps you make your business more credible online. One way we do this is by showing you how to use the ‘business owner reply’ feature on most directories.</p>
-                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">When you verify your reviews with Dex Media, we provide you with a reference guide that contains examples of replies that businesses like yours have written in the past. You can use these examples to draft your own responses which can help you attract more customers. To unlock this benefit and more, just respond to the occasional verification request that we send.</p>
+                                <td style="text-align: justify; padding: 20px 10px 30px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">
+                                  <p style="text-align: justify; padding: 0px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Getting more customers to call or visit your business means showing up when people search online. Everyone knows that, but “showing up” is not what it used to be.</p>
+                                  <p style="text-align: justify; padding: 0px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">You can pay top dollar to be the first advertisement people click. However, to be the business that people call – not just click – you need to build trust. Online reviews can build trust for you if your reviews are credible.</p>
+                                  <p style="text-align: justify; padding: 0px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Dex Media Verify helps you make your business more credible online. One way we do this is by showing you how to use the ‘business owner reply’ feature on most directories.</p>
+                                  <p style="text-align: justify; padding: 0px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">When you verify your reviews with Dex Media, we provide you with a reference guide that contains examples of replies that businesses like yours have written in the past. You can use these examples to draft your own responses which can help you attract more customers. To unlock this benefit and more, just respond to the occasional verification request that we send.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -329,8 +355,16 @@
                                         </tr>
                                         <tr>
                                             <td align="right" style="padding: 3px 15px; background-color: #3f3f3f; ">
-                                                <div class="logo" style="float:left;"><img src="logo.png" alt="" style="width:100%;"></div>
-                                                <a href="tel:844-339-9993" style="color: #e8e7e7; font-family:'OpenSans', sans-serif; font-size:17px; line-height: 17px; font-weight: 600; vertical-align:middle; text-decoration:none;"><img src="tel.png" alt=""  style="vertical-align:middle; padding-right: 10px;">844-339-9993</a>
+                                              <table style="width: 100%;">
+                                                <tr>
+                                                  <td style="text-align: left;">
+                                                    <div class="logo" style="display: inline-block; text-align: left;"><img src="logo.png" alt="" style="width:100%;"></div>
+                                                  </td>
+                                                  <td style="text-align: right;">
+                                                    <a href="tel:844-339-9993" style="color: #e8e7e7; font-family:'OpenSans', sans-serif; font-size:17px; line-height: 17px; font-weight: 600; vertical-align:middle; text-decoration:none;"><img src="tel.png" alt=""  style="vertical-align:middle; padding-right: 10px;">844-339-9993</a>
+                                                  </td>
+                                                </tr>
+                                              </table>
                                             </td>
                                         </tr>
                                         <tr>
