@@ -90,35 +90,19 @@
       margin-left: 25px;
       float: left;
     }
-    .logo img {
-      width: 100%;
-    }
-    .border {
+
+    td[class="border"] {
       border: 1px solid #f1f1f1;
     }
-    .v-middle {
+    span[class="v-middle"] {
       display: inline-block;
       vertical-align: middle;
     }
-    .r-col__header {
+    td[class="r-col__header"] {
       padding:22px 0 16px 0;
       text-align: center;
       font-family:'Arial',sans-serif;
       font-size: 14px; font-weight: 700; color: #3d596d;
-    }
-    a[class='r-col__button'] {
-      display: inline-block;
-      text-align: center;
-      font-family: 'Arial';
-      font-size: 18px;
-      line-height:22px;
-      border-radius: 5px;
-      padding: 6px;
-      color: #fff;
-      width: 90px;
-      text-decoration:none;
-      box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3);
-      position: relative;
     }
     img[class="stars"] {
       display: block;
@@ -127,12 +111,9 @@
       height:19px;
       border: 0;
     }
-    a[class="gray"] {
-      color: #798489;
-    }
     /* MOBILE STYLES */
     @media screen and (max-width: 625px) {
-      .logo{
+      div[class="logo"]{
         width: 120px;
       }
 
@@ -146,22 +127,23 @@
           margin: 0 auto;
       
       }
-      .message {
+      table[class='message'] {
           width:100%;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
       }
-      .actions{
-          margin: 0px 0 35px;
+      table[class='actions'] {
+          margin: 5px 0 35px;
           float: left;
           width: 100% !important;
         }
-      .r-col__header {
+
+
+      td[class="r-col__header"] {
         padding:15px 0 15px 0;
       }
       a[class="mobile-hide"]{
         display: none !important;
       }
-
     }
 </style>
 
@@ -231,8 +213,8 @@
                                         </tr>
                                         <tr>
                                             <td style="padding: 0; text-align: center;">
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes <img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes <img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -272,8 +254,8 @@
                                         </tr>
                                         <tr>
                                             <td style="padding: 0; text-align: center;">
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -313,8 +295,8 @@
                                         </tr>
                                         <tr>
                                             <td style="padding: 0; text-align: center;">
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
-                                                <a href="#" class="r-col__button" style="background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #58a519 0%, #60a924 50%, #67ae2d 51%, #66ac2d 100%); border: 1px solid #58a618; margin-right:8px;">Yes<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
+                                                <a href="#" style="display: inline-block; text-align: center; font-family: 'Arial'; font-size: 18px; line-height:22px; border-radius: 5px; padding: 6px; color: #fff; width: 90px; text-decoration:none; box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3); position: relative; background: linear-gradient(to top, #a63b18 0%, #aa4322 50%, #ad4d2d 51%, #ac4c2d 100%); border: 1px solid #a63b18; ">No<img src="bumps.png" alt="" style="position: absolute; top: 10px; right: 6px;"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -322,10 +304,10 @@
                             </tr>
                             <tr>
                                 <td style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">
-                                  <p>Getting more customers to call or visit your business means showing up when people search online. Everyone knows that, but “showing up” is not what it used to be.</p>
-                                  <p>You can pay top dollar to be the first advertisement people click. However, to be the business that people call – not just click – you need to build trust. Online reviews can build trust for you if your reviews are credible.</p>
-                                  <p>Dex Media Verify helps you make your business more credible online. One way we do this is by showing you how to use the ‘business owner reply’ feature on most directories.</p>
-                                  <p>When you verify your reviews with Dex Media, we provide you with a reference guide that contains examples of replies that businesses like yours have written in the past. You can use these examples to draft your own responses which can help you attract more customers. To unlock this benefit and more, just respond to the occasional verification request that we send.</p>
+                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Getting more customers to call or visit your business means showing up when people search online. Everyone knows that, but “showing up” is not what it used to be.</p>
+                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">You can pay top dollar to be the first advertisement people click. However, to be the business that people call – not just click – you need to build trust. Online reviews can build trust for you if your reviews are credible.</p>
+                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">Dex Media Verify helps you make your business more credible online. One way we do this is by showing you how to use the ‘business owner reply’ feature on most directories.</p>
+                                  <p style="text-align: justify; padding: 20px 10px; color: #3d596d; font-family:'OpenSans', sans-serif; font-size:14px; line-height: 17px; font-weight: 400;">When you verify your reviews with Dex Media, we provide you with a reference guide that contains examples of replies that businesses like yours have written in the past. You can use these examples to draft your own responses which can help you attract more customers. To unlock this benefit and more, just respond to the occasional verification request that we send.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -347,7 +329,7 @@
                                         </tr>
                                         <tr>
                                             <td align="right" style="padding: 3px 15px; background-color: #3f3f3f; ">
-                                                <div class="logo" style="float:left;"><img src="logo.png" alt=""></div>
+                                                <div class="logo" style="float:left;"><img src="logo.png" alt="" style="width:100%;"></div>
                                                 <a href="tel:844-339-9993" style="color: #e8e7e7; font-family:'OpenSans', sans-serif; font-size:17px; line-height: 17px; font-weight: 600; vertical-align:middle; text-decoration:none;"><img src="tel.png" alt=""  style="vertical-align:middle; padding-right: 10px;">844-339-9993</a>
                                             </td>
                                         </tr>
@@ -361,10 +343,10 @@
                                         <tr>
                                             <td style="text-align: justify; padding: 0 15px; color: #798489; font-family:'OpenSans', sans-serif; font-size:12px; line-height: 15px; font-weight: 400;">
                                                 <h2 style="margin: 22px 0 0; color: #798489; font-family:'OpenSans', sans-serif; font-size:12px; line-height: 15px; font-weight: 700;">Subscription Preferences</h2>
-                                                <p style="margin: 0 0 12px 0;">Although we may call from time to time, these notifications will be automatically sent to you via email. To stop receiving these notifications, click <a href="#" class="gray">here</a>.</p>
-                                                <p style="margin: 0 0 12px 0;">If you received this email and would like to subscribe to our newsletter, click <a href="#" class="gray">here</a>.</p>
-                                                <p style="margin: 0 0 12px 0;">If you wish to unsubscribe from further email messages from Dex Media, click <a href="#" class="gray">here</a> or send your written request via U.S. postal mail to: Dex Media, Inc., P.O. Box 619810, DFW Airport, TX 75261-4008.</p>
-                                                <p style="margin: 0 0 12px 0;">This email was sent by Dex Media, 2200 West Airfield Dr, PO Box 619810, DFW Airport, TX 75261-4008, USA. Click <a href="#" class="gray">here</a> to view our Privacy Policy.</p>
+                                                <p style="margin: 0 0 12px 0;">Although we may call from time to time, these notifications will be automatically sent to you via email. To stop receiving these notifications, click <a href="#" style="color: #798489;">here</a>.</p>
+                                                <p style="margin: 0 0 12px 0;">If you received this email and would like to subscribe to our newsletter, click <a href="#" style="color: #798489;">here</a>.</p>
+                                                <p style="margin: 0 0 12px 0;">If you wish to unsubscribe from further email messages from Dex Media, click <a href="#" style="color: #798489;">here</a> or send your written request via U.S. postal mail to: Dex Media, Inc., P.O. Box 619810, DFW Airport, TX 75261-4008.</p>
+                                                <p style="margin: 0 0 12px 0;">This email was sent by Dex Media, 2200 West Airfield Dr, PO Box 619810, DFW Airport, TX 75261-4008, USA. Click <a href="#" style="color: #798489;">here</a> to view our Privacy Policy.</p>
                                                 <p style="margin: 0 0 12px 0;">© 2016 Dex Media. All rights reserved.</p>
                                             </td>
                                         </tr>
